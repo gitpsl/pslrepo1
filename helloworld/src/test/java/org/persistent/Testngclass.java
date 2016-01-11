@@ -19,9 +19,9 @@ public class Testngclass {
 	WebDriver driver = null;
 	 protected StringBuffer verificationErrors = new StringBuffer();
 
-
-	 @Parameters({ "platform","browser","version", "url" })
 	 @BeforeTest(alwaysRun=true)
+	 @Parameters({ "platform","browser","version", "url" })
+	 
 	 public void setup(String platform, String browser, String version,
 			 String url) throws MalformedURLException
 	// public void setup() throws MalformedURLException
