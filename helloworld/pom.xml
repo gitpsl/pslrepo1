@@ -8,6 +8,11 @@
   <name>helloworld Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+	<dependency>
+		<groupId>org.testng</groupId>
+		<artifactId>testng</artifactId>
+		<version>6.9.10</version>
+	</dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
