@@ -2,20 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Parallel Tests" verbose="1" thread-count="4"
 parallel="tests">
-<parameters>
- 			<parameter name="platform" value="Windows" />
- 			<parameter name="browser" value="Internet Explorer" />
- 			<parameter name="version" value="11" />
- 			<parameter name="url" value="http://dl.dropbox.com/u/55228056/bmicalculator.html"/>
-</parameters>
-<tests>
 	<test name="Windows+IE9 Test">
- 		
+ 		<parameter name="platform" value="Windows" />
+                <parameter name="browser" value="internet explorer" />
+                <parameter name="version" value="11" />
+                <parameter name="url" value="http://dl.dropbox.com/u/55228056/bmicalculator.html"/>
  		<classes>
  			<class name="org.persistent.Test01" />
  		</classes>
  	</test>
- </tests>
-
 
 </suite>
