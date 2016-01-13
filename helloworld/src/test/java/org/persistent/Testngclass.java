@@ -19,8 +19,8 @@ public class Testngclass {
 	WebDriver driver = null;
 	 protected StringBuffer verificationErrors = new StringBuffer();
 
-	 @BeforeTest(alwaysRun=true)
 	 @Parameters({ "platform","browser","version", "url" })
+	 @BeforeTest(alwaysRun=true)
 	 
 	 public void setup(String platform, String browser, String version,
 			 String url) throws MalformedURLException
@@ -37,7 +37,7 @@ public class Testngclass {
 					 WINDOWS);
 		 //Version
 		 caps.setVersion(version);
-
+		 caps.setBrowserName(browser);
 		 driver = new RemoteWebDriver(new URL("http://10.77.35.70:4444/wd/hub"), caps);
 
 		 // Open the BMI Calculator Application

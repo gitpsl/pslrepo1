@@ -12,7 +12,7 @@ parallel="tests">
 	<test name="Windows+IE9 Test">
  		
  		<classes>
- 			<class name="org.persistent.Testngclass" />
+ 			<class name="org.persistent.Test01" />
  		</classes>
  	</test>
  </tests>

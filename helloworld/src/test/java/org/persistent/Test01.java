@@ -19,10 +19,14 @@ public class Test01 extends Testngclass{
 	public void testBmiCalculator() throws InterruptedException {
 		WebElement height = driver.findElement(By.
 				name("heightCMS"));
+		height.click();
+        height.clear();
 		height.sendKeys("181");
 
 		WebElement weight = driver.findElement(By.
 				name("weightKg"));
+		weight.click();
+		 weight.clear();
 		weight.sendKeys("80");
 		WebElement calculateButton = driver.findElement(By.
 				id("Calculate"));
