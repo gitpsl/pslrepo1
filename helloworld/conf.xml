@@ -20,7 +20,7 @@ parallel="tests">
  			<class name="org.persistent.Test01" />
  		</classes>
  	</test>
-	<test name="Linux chrome Test">
+	<test name="Linux firefox Test">
  		<parameter name="platform" value="Linux" />
                 <parameter name="browser" value="firefox" />
                 <parameter name="version" value="38" />
