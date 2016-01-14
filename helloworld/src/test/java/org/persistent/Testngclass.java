@@ -28,9 +28,9 @@ public class Testngclass {
 	 {
 		 
 		// String platform="Windows",version="9",url="http://dl.dropbox.com/u/55228056/bmicalculator.html",browser="Internet Explorer";
-		 
+		 System.setProperty("webdriver.chrome.driver", "/opt/chromedrivers/chromedriver");
 		 DesiredCapabilities caps = new DesiredCapabilities();
-		  System.setProperty("webdriver.chrome.driver", "/opt/chromedrivers/chromedriver");
+		  
 		 //Platforms
 		 if(platform.equalsIgnoreCase("Windows"))
 			 caps.setPlatform(org.openqa.selenium.Platform.
