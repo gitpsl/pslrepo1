@@ -13,7 +13,7 @@ parallel="tests">
  	</test>
 	<test name="Linux chrome Test">
  		<parameter name="platform" value="Linux" />
-                <parameter name="browser" value="google-chrome" />
+                <parameter name="browser" value="google-chrome --no-sandbox" />
                 <parameter name="version" value="47" />
                 <parameter name="url" value="http://dl.dropbox.com/u/55228056/bmicalculator.html"/>
  		<classes>
