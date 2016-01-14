@@ -44,7 +44,7 @@ public class Testngclass {
 		if(browser.equalsIgnoreCase("chrome")){
 			System.setProperty("webdriver.chrome.driver", "/opt/chromedrivers/chromedriver");
 			ChromeOptions options = new ChromeOptions();
-			options.add_argument("--no-sandbox");
+			options.addArguments("--no-sandbox");
 			caps.setCapability(ChromeOptions.CAPABILITY, options);	
 
 			
