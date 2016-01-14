@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import java.net.MalformedURLException;
 import java.net.URL;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 
 public class Testngclass {
@@ -38,6 +39,17 @@ public class Testngclass {
 		 else if(platform.equalsIgnoreCase("Linux"))
 			 caps.setPlatform(org.openqa.selenium.Platform.
 					 LINUX);
+
+		
+		if(browser.equalsIgnoreCase("chrome")){
+			
+			ChromeOptions options = new ChromeOptions();
+			options.add_argument("--no-sandbox");
+			caps.setCapability(ChromeOptions.CAPABILITY, options);	
+
+			
+		}
+	
 		 //Version
 		 caps.setVersion(version);
 		 caps.setBrowserName(browser);
