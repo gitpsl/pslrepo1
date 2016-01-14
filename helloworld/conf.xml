@@ -11,5 +11,23 @@ parallel="tests">
  			<class name="org.persistent.Test01" />
  		</classes>
  	</test>
+	<test name="Linux chrome Test">
+ 		<parameter name="platform" value="Linux" />
+                <parameter name="browser" value="google-chrome" />
+                <parameter name="version" value="47" />
+                <parameter name="url" value="http://dl.dropbox.com/u/55228056/bmicalculator.html"/>
+ 		<classes>
+ 			<class name="org.persistent.Test01" />
+ 		</classes>
+ 	</test>
+	<test name="Linux chrome Test">
+ 		<parameter name="platform" value="Linux" />
+                <parameter name="browser" value="firefox" />
+                <parameter name="version" value="38" />
+                <parameter name="url" value="http://dl.dropbox.com/u/55228056/bmicalculator.html"/>
+ 		<classes>
+ 			<class name="org.persistent.Test01" />
+ 		</classes>
+ 	</test>
 
 </suite>

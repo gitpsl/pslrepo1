@@ -35,6 +35,9 @@ public class Testngclass {
 		 if(platform.equalsIgnoreCase("Windows"))
 			 caps.setPlatform(org.openqa.selenium.Platform.
 					 WINDOWS);
+		 else if(platform.equalsIgnoreCase("Linux"))
+			 caps.setPlatform(org.openqa.selenium.Platform.
+					 LINUX);
 		 //Version
 		 caps.setVersion(version);
 		 caps.setBrowserName(browser);
